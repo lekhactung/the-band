@@ -1,0 +1,119 @@
+/*pc*/
+@media (min-width: 1024px) {
+
+}
+
+/* tablet &  mobile */
+@media (max-width: 1023px){
+.buy-btn{
+    padding: 14px 18px;
+}
+.form-control{
+    padding: 15px 0;
+}
+#nav .subnav a {
+    padding: 5px 12px;
+}
+.contact-info {
+    line-height: 2;
+}
+
+}
+/*tablet*/
+
+@media (min-width : 740px) and (max-width: 1024x){
+    .social-list>a{
+        margin: 0 5px !important;
+    }
+    .social-list{
+        font-size: 35px !important;
+    }
+}
+
+/*mobile*/
+@media (max-width: 739px) {
+    .s-full-width{
+        width: 100%  !important;
+    }
+   .s-col-full{
+       width: 100% !important;
+   }
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-button{
+      display: block;
+  }
+    #header .search-button {
+        display: none;
+    }
+    
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+    #nav > li a{
+        padding: 1px 24px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav {
+        position: initial;
+        background-color: #333;  
+    }   
+    #nav .subnav a {
+        color: white;
+        padding: 5px 41px;
+    }
+   
+    
+    #content  .member-item{
+        width: 100%;
+    }
+    #content .member-img {
+        width: 60%;
+    }
+    /* một trong  hai cách cách nào cũng được */
+    .mobile-col-full{
+        width: 100%;/*new class  in index*/
+        padding: 0 8px;
+        margin-bottom: 16px;
+    }
+    /* .place-item{
+        width: 100%;
+        padding: 0 8px;
+        margin-bottom: 16px;
+    } */
+    /* end */
+    .mobile-col{
+        width: 100%;
+    }
+    .contact-info{
+        margin-bottom: 8px;
+    }
+    .s-mobile-col>.form-control{
+        margin-top: 8px;
+    }
+    .form-control{
+        padding: 10px 8px;
+    }
+    .contact-content{
+        overflow: hidden;
+    }
+    .contact-form{
+        margin-top: 8px;
+    }
+    .buy-btn{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    }
+    #footer .social-list{
+        font-size: 24px;
+    }
+}
