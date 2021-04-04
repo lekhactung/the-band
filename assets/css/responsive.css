@@ -21,7 +21,7 @@
 }
 /*tablet*/
 
-@media (min-width : 740px) and (max-width: 1024x){
+@media (min-width : 740px) and (max-width: 1024px){
     .social-list>a{
         margin: 0 5px !important;
     }
@@ -70,7 +70,9 @@
         color: white;
         padding: 5px 41px;
     }
-   
+    #slider .text-content{
+        display: none;
+    }
     
     #content  .member-item{
         width: 100%;
@@ -98,6 +100,7 @@
     }
     .s-mobile-col>.form-control{
         margin-top: 8px;
+        font-size: 16px;
     }
     .form-control{
         padding: 10px 8px;
