@@ -42,7 +42,7 @@ html{
 }
 
 #header{
-   height: 46px;
+height: 46px;
 background-color: black; 
 position: fixed ;
 top: 0;
@@ -337,6 +337,7 @@ font-size: 10px;
     margin: 15px 0px;
 }
 .buy-btn{
+    border: none;
     display: inline-block;
     color: white;
     background-color: black;
@@ -439,4 +440,116 @@ width: 100%;
 
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    width: 900px;
+    background-color: #fff ;
+    position: relative;
+    animation: slideDown ease-out .3s;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    color: #fff;
+    line-height: 15px;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-header-close{
+    font-size: 14px;
+}
+
+.modal-header{
+    display: flex;
+    background-color: #009688;
+    height: 129px;
+    font-size: 30px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-bag-icon{
+    margin-right: 16px;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    margin-bottom: 16px;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+#buy-ticket{
+    width: 100%;
+    background-color: #009688;
+    border: 0;
+    height: 48px;
+    padding: 12x;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#buy-ticket:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-footer{
+    padding: 16px 16px 32px 16px;
+    text-align: right;
+}
+
+.modal-help-link{
+    color: #2169F3;
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
